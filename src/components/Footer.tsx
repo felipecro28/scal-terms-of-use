@@ -1,4 +1,6 @@
 
+import { ExternalLink } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -18,26 +20,39 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-scal-white font-semibold mb-4">Navegação</h3>
+            <h3 className="text-scal-white font-semibold mb-4">Documentos Legais</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#conceito" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Nossa Identidade
+                <a 
+                  href="/termos-de-uso" 
+                  className="text-scal-white/70 hover:text-scal-lime-green transition-colors inline-flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Termos de Uso
+                  <ExternalLink size={14} />
                 </a>
               </li>
               <li>
-                <a href="#servicos" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Serviços
+                <a 
+                  href="/politica-de-privacidade" 
+                  className="text-scal-white/70 hover:text-scal-lime-green transition-colors inline-flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Política de Privacidade
+                  <ExternalLink size={14} />
                 </a>
               </li>
               <li>
-                <a href="#mudancas" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Mudanças
-                </a>
-              </li>
-              <li>
-                <a href="#features" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Recursos
+                <a 
+                  href="/lgpd" 
+                  className="text-scal-white/70 hover:text-scal-lime-green transition-colors inline-flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LGPD
+                  <ExternalLink size={14} />
                 </a>
               </li>
             </ul>
