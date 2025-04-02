@@ -7,6 +7,7 @@ import ChangesSection from "@/components/ChangesSection";
 import CTASection from "@/components/CTASection";
 import ServicesSection from "@/components/ServicesSection";
 import BrandConcept from "@/components/BrandConcept";
+import SageAISection from "@/components/SageAISection";
 
 const Index = () => {
   return (
@@ -70,6 +71,8 @@ const Index = () => {
       <BrandConcept />
       
       <ServicesSection />
+      
+      <SageAISection />
       
       <ChangesSection />
       
