@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Add Scal custom colors
+				scal: {
+					'dark-green': '#092F25',
+					'green-cyan': '#13916E',
+					'lime-green': '#7AF365',
+					'orange': '#FB7F26',
+					'dark-jungle': '#0B241C',
+					'white': '#FFFFFF'
 				}
+			},
+			fontFamily: {
+				'funnel': ['Inter', 'sans-serif'], // Using Inter as a substitute for Funnel Sans
+				'museo': ['Syne', 'sans-serif'], // Using Syne as a substitute for Museo Moderno
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +98,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.5s ease-out'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
 		}
 	},

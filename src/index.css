@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,22 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-scal-dark-jungle text-scal-white font-funnel;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-scal-dark-jungle to-scal-dark-green;
+  }
+
+  .feature-card {
+    @apply bg-scal-dark-green bg-opacity-70 backdrop-blur-lg rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-scal-lime-green/20 border border-scal-green-cyan/20;
+  }
+  
+  .button-primary {
+    @apply bg-scal-lime-green text-scal-dark-green font-medium px-6 py-3 rounded-full transition-all hover:bg-opacity-90 hover:shadow-lg hover:shadow-scal-lime-green/30 focus:ring-2 focus:ring-scal-lime-green/50 focus:outline-none;
+  }
+  
+  .button-secondary {
+    @apply bg-transparent border-2 border-scal-green-cyan text-scal-green-cyan font-medium px-6 py-3 rounded-full transition-all hover:bg-scal-green-cyan/10 hover:shadow-lg hover:shadow-scal-green-cyan/20 focus:ring-2 focus:ring-scal-green-cyan/50 focus:outline-none;
   }
 }
