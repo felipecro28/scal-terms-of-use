@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,23 +37,11 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <nav className="flex gap-6">
-            <a href="#conceito" className="text-scal-white/80 hover:text-scal-lime-green transition-colors text-sm">
-              Nova Identidade
-            </a>
-            <a href="#servicos" className="text-scal-white/80 hover:text-scal-lime-green transition-colors text-sm">
-              Serviços
-            </a>
-            <a href="#mudancas" className="text-scal-white/80 hover:text-scal-lime-green transition-colors text-sm">
-              Mudanças
-            </a>
-          </nav>
-          
           <div className="flex gap-4">
-            <a href="#demo" className="hidden sm:inline-block button-secondary text-sm">
+            <Link to="/demo" className="hidden sm:inline-block button-secondary text-sm">
               Demonstração
-            </a>
-            <a href="#acesso" className="button-primary text-sm">
+            </Link>
+            <a href="https://app.sistemascal.com.br" className="button-primary text-sm">
               Acessar Sistema
             </a>
           </div>
@@ -70,39 +59,16 @@ const Header = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-scal-dark-jungle bg-opacity-95 backdrop-blur-lg p-6 border-t border-scal-green-cyan/10 shadow-lg">
-          <nav className="flex flex-col gap-4 mb-6">
-            <a 
-              href="#conceito" 
-              className="text-scal-white/80 hover:text-scal-lime-green transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Nova Identidade
-            </a>
-            <a 
-              href="#servicos" 
-              className="text-scal-white/80 hover:text-scal-lime-green transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Serviços
-            </a>
-            <a 
-              href="#mudancas" 
-              className="text-scal-white/80 hover:text-scal-lime-green transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Mudanças
-            </a>
-          </nav>
           <div className="flex flex-col gap-3">
-            <a 
-              href="#demo" 
+            <Link 
+              to="/demo" 
               className="button-secondary text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Demonstração
-            </a>
+            </Link>
             <a 
-              href="#acesso" 
+              href="https://app.sistemascal.com.br" 
               className="button-primary text-center"
               onClick={() => setMobileMenuOpen(false)}
             >

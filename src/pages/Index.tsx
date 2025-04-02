@@ -8,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import ServicesSection from "@/components/ServicesSection";
 import BrandConcept from "@/components/BrandConcept";
 import SageAISection from "@/components/SageAISection";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -36,12 +37,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-              <a href="#acesso" className="button-primary text-base">
+              <a href="https://app.sistemascal.com.br" className="button-primary text-base">
                 Acessar Sistema
               </a>
-              <a href="#demo" className="button-secondary text-base">
+              <Link to="/demo" className="button-secondary text-base">
                 Solicitar Demonstração
-              </a>
+              </Link>
             </div>
             
             <div className="relative mx-auto max-w-3xl">
