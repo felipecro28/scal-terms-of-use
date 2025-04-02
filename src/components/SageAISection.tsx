@@ -69,17 +69,6 @@ const SageAISection = () => {
             </a>
           </div>
         </div>
-        
-        <div className="mt-20">
-          <div className="relative group overflow-hidden rounded-2xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#FB7F26]/30 to-[#1A1F2C]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <img 
-              src="/lovable-uploads/36ca34ec-449f-4c59-ae5e-e04ecda18dd4.png" 
-              alt="Sage AI Banner" 
-              className="w-full h-auto rounded-2xl shadow-lg border border-[#FB7F26]/30 transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
