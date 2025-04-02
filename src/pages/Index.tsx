@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
 import ChangesSection from "@/components/ChangesSection";
 import CTASection from "@/components/CTASection";
+import ServicesSection from "@/components/ServicesSection";
+import BrandConcept from "@/components/BrandConcept";
 
 const Index = () => {
   return (
@@ -24,12 +26,12 @@ const Index = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
-              Bem-vindo ao <span className="text-scal-lime-green">novo Scal</span>
+              Apresentando o <span className="text-scal-lime-green">novo Scal</span>
             </h1>
             
             <p className="text-xl text-scal-white/90 mb-10 max-w-2xl mx-auto">
-              Mais moderno, mais eficiente e totalmente redesenhado para 
-              proporcionar a melhor experiência para o seu negócio.
+              Uma plataforma completa que transforma processos em resultados reais,
+              aproximando profissionais de saúde e pacientes.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
@@ -56,14 +58,20 @@ const Index = () => {
         
         <div className="flex justify-center mt-16">
           <a 
-            href="#mudancas" 
+            href="#conceito" 
             className="text-scal-white/70 flex flex-col items-center hover:text-scal-lime-green transition-colors"
           >
-            <span className="mb-2 text-sm">Descubra as mudanças</span>
+            <span className="mb-2 text-sm">Descubra nossa nova identidade</span>
             <ChevronDown className="animate-bounce" />
           </a>
         </div>
       </section>
+      
+      <BrandConcept />
+      
+      <ServicesSection />
+      
+      <ChangesSection />
       
       {/* Features Section */}
       <section className="py-20 px-6" id="features">
@@ -100,8 +108,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
-      <ChangesSection />
       
       <CTASection />
       

@@ -1,13 +1,13 @@
 
 import { ReactNode } from 'react';
 
-interface FeatureCardProps {
+interface ServiceCardProps {
   icon: ReactNode;
   title: string;
   description: string;
 }
 
-const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
+const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
   return (
     <div className="bg-scal-dark-green bg-opacity-70 backdrop-blur-lg rounded-2xl p-6 border border-scal-green-cyan/20 transition-all duration-300 hover:shadow-lg hover:shadow-scal-lime-green/20 h-full">
       <div className="text-scal-lime-green mb-4 text-3xl">
@@ -23,4 +23,4 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
   );
 };
 
-export default FeatureCard;
+export default ServiceCard;
