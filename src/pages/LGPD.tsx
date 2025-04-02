@@ -19,19 +19,29 @@ const LGPD = () => {
           <p className="text-scal-white/70 mb-8">Última atualização: 28 de dezembro de 2023</p>
           
           <div className="prose prose-lg prose-invert max-w-none">
-            <p className="text-scal-white/90 mb-4">
-              A Scal está comprometida com a proteção de seus dados pessoais e com o cumprimento da Lei Geral de Proteção de Dados (LGPD).
+            <p className="text-scal-white/90 mb-6">
+              A Empresa Scal Tecnologia disponibiliza um e-mail para solicitações dos titulares de dados pessoais no exercício dos seus direitos em respeito a Lei nº 13.908/2018 (Lei Geral de Proteção de Dados).
             </p>
             
-            <p className="text-scal-white/90 mb-4">
-              Nesta página, explicamos como tratamos seus dados pessoais em conformidade com a LGPD (Lei nº 13.709/2018) 
-              e como você pode exercer seus direitos como titular dos dados.
+            <p className="text-scal-white/90 mb-6">
+              Todas as comunicações realizadas através dos e-mails serão analisadas e respondidas no prazo de 15 (quinze) dias.
             </p>
             
-            {/* Adicionar aqui o restante do conteúdo relacionado à LGPD */}
-            <p className="text-scal-white/90 mt-8 mb-4">
-              Para saber mais detalhes sobre nossa política de LGPD completa, consulte nosso site oficial.
-            </p>
+            <div className="bg-scal-dark-jungle/50 rounded-lg p-6 border border-scal-green-cyan/10 mt-8">
+              <h2 className="text-xl font-semibold text-scal-lime-green mb-4">Informações de Contato</h2>
+              <p className="text-scal-white/90 mb-2">
+                <span className="font-semibold">DPOs responsáveis:</span> Thiago Coelho e Almiro Araújo
+              </p>
+              <p className="text-scal-white/90">
+                <span className="font-semibold">E-mail de contato:</span>{" "}
+                <a 
+                  href="mailto:dpo@appscal.com.br" 
+                  className="text-scal-lime-green hover:text-scal-lime-green/80 transition-colors"
+                >
+                  dpo@appscal.com.br
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         
