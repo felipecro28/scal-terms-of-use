@@ -10,11 +10,11 @@ const ChangesSection = () => {
             Evoluindo para o futuro
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-scal-white">
-            O Scal está de <span className="text-scal-lime-green">cara nova</span>
+            O Scal está com <span className="text-scal-lime-green">nova identidade</span>
           </h2>
           <p className="text-scal-white/80 text-lg">
-            Redesenhamos completamente a plataforma para oferecer uma experiência mais fluida, 
-            intuitiva e poderosa. Conheça as principais mudanças do novo Scal.
+            Repensamos nossa marca para representar melhor nossos valores e nossa visão para o futuro da saúde.
+            Este é o primeiro passo de uma grande transformação.
           </p>
         </div>
 
@@ -25,9 +25,9 @@ const ChangesSection = () => {
                 <ArrowRight className="h-6 w-6 text-scal-lime-green" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-scal-white mb-2">Interface renovada</h3>
+                <h3 className="text-xl font-semibold text-scal-white mb-2">Nova identidade visual</h3>
                 <p className="text-scal-white/80">
-                  Design moderno e responsivo, com foco na experiência do usuário e na facilidade de uso.
+                  Cores vibrantes e formas modernas que refletem nossa missão de inovar no setor de saúde.
                 </p>
               </div>
             </div>
@@ -37,9 +37,9 @@ const ChangesSection = () => {
                 <ArrowRight className="h-6 w-6 text-scal-lime-green" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-scal-white mb-2">Performance aprimorada</h3>
+                <h3 className="text-xl font-semibold text-scal-white mb-2">Valores reforçados</h3>
                 <p className="text-scal-white/80">
-                  Reescrevemos o código para tornar o sistema mais rápido e eficiente, mesmo com grandes volumes de dados.
+                  Nossa nova marca reflete nosso compromisso com inovação, confiança e excelência no cuidado com a saúde.
                 </p>
               </div>
             </div>
@@ -49,9 +49,9 @@ const ChangesSection = () => {
                 <ArrowRight className="h-6 w-6 text-scal-lime-green" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-scal-white mb-2">Novos recursos</h3>
+                <h3 className="text-xl font-semibold text-scal-white mb-2">Preparação para o futuro</h3>
                 <p className="text-scal-white/80">
-                  Adicionamos funcionalidades solicitadas pelos usuários e modernizamos os recursos existentes.
+                  Esta renovação visual é o primeiro passo de uma jornada que trará muitas novidades para nossa plataforma.
                 </p>
               </div>
             </div>
@@ -61,9 +61,9 @@ const ChangesSection = () => {
                 <ArrowRight className="h-6 w-6 text-scal-lime-green" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-scal-white mb-2">Segurança reforçada</h3>
+                <h3 className="text-xl font-semibold text-scal-white mb-2">Mesma confiabilidade</h3>
                 <p className="text-scal-white/80">
-                  Implementamos as mais recentes tecnologias de segurança para proteger seus dados e informações.
+                  Apesar da nova aparência, mantemos o mesmo compromisso com a qualidade e confiabilidade que você já conhece.
                 </p>
               </div>
             </div>

@@ -1,3 +1,4 @@
+
 import { ChevronDown, LineChart, Shield, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -23,16 +24,15 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-scal-dark-green/70 backdrop-blur-sm px-4 py-2 rounded-full border border-scal-green-cyan/20 mb-6">
               <span className="h-2 w-2 bg-scal-lime-green rounded-full mr-2 animate-pulse"></span>
-              <p className="text-sm font-medium text-scal-white">Uma nova era chegou</p>
+              <p className="text-sm font-medium text-scal-white">Novidade</p>
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
-              Apresentando o <span className="text-scal-lime-green">novo Scal</span>
+              Apresentando a <span className="text-scal-lime-green">nova marca Scal</span>
             </h1>
             
             <p className="text-xl text-scal-white/90 mb-10 max-w-2xl mx-auto">
-              Uma plataforma completa que transforma processos em resultados reais,
-              aproximando profissionais de saúde e pacientes.
+              Uma nova identidade visual que reflete nossa evolução, valores e visão de futuro para o ecossistema de saúde.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
@@ -44,7 +44,7 @@ const Index = () => {
                 className="button-secondary text-base relative group overflow-hidden"
               >
                 <span className="absolute inset-0 bg-scal-green-cyan/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full"></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Solicitar Demonstração</span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Conhecer Nova Marca</span>
               </Link>
             </div>
             
