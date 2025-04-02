@@ -38,8 +38,12 @@ const Header = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex gap-4">
-            <Link to="/demo" className="hidden sm:inline-block button-secondary text-sm">
-              Demonstração
+            <Link 
+              to="/demo" 
+              className="hidden sm:inline-flex button-secondary text-sm relative group overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-scal-green-cyan/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full"></span>
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300">Demonstração</span>
             </Link>
             <a href="https://app.sistemascal.com.br" className="button-primary text-sm">
               Acessar Sistema
@@ -62,10 +66,11 @@ const Header = () => {
           <div className="flex flex-col gap-3">
             <Link 
               to="/demo" 
-              className="button-secondary text-center"
+              className="button-secondary text-center group relative overflow-hidden"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Demonstração
+              <span className="absolute inset-0 bg-scal-green-cyan/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full"></span>
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300">Demonstração</span>
             </Link>
             <a 
               href="https://app.sistemascal.com.br" 

@@ -15,8 +15,13 @@ const CTASection = () => {
             <a href="#acesso" className="button-primary text-base">
               Acessar Sistema Atual
             </a>
-            <a href="#demo" className="button-secondary text-base" id="demo">
-              Agendar Demonstração do Novo Scal
+            <a 
+              href="#demo" 
+              className="button-secondary text-base relative overflow-hidden group" 
+              id="demo"
+            >
+              <span className="absolute inset-0 bg-scal-green-cyan/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              <span className="relative z-10">Agendar Demonstração do Novo Scal</span>
             </a>
           </div>
         </div>

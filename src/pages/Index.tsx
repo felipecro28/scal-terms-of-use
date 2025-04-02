@@ -1,4 +1,3 @@
-
 import { ChevronDown, LineChart, Shield, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -40,8 +39,12 @@ const Index = () => {
               <a href="https://app.sistemascal.com.br" className="button-primary text-base">
                 Acessar Sistema
               </a>
-              <Link to="/demo" className="button-secondary text-base">
-                Solicitar Demonstração
+              <Link 
+                to="/demo" 
+                className="button-secondary text-base relative group overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-scal-green-cyan/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full"></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Solicitar Demonstração</span>
               </Link>
             </div>
             

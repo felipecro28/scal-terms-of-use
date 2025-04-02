@@ -1,4 +1,3 @@
-
 const SageAISection = () => {
   return (
     <section className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-[#1A1F2C] to-[#6E59A5]/30" id="sage">
@@ -61,7 +60,10 @@ const SageAISection = () => {
               </li>
             </ul>
             
-            <a href="#demo" className="inline-flex mt-4 bg-[#9b87f5] text-white font-medium px-6 py-3 rounded-full transition-all hover:bg-opacity-90 hover:shadow-lg hover:shadow-[#9b87f5]/30 focus:ring-2 focus:ring-[#9b87f5]/50 focus:outline-none">
+            <a 
+              href="#demo" 
+              className="inline-flex mt-4 bg-[#9b87f5] text-white font-medium px-6 py-3 rounded-full transition-all hover:bg-opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-[#9b87f5]/50 focus:ring-2 focus:ring-[#9b87f5]/50 focus:outline-none duration-300"
+            >
               Conheça a Sage em Ação
             </a>
           </div>
