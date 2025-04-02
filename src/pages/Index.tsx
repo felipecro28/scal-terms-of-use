@@ -9,6 +9,7 @@ import ServicesSection from "@/components/ServicesSection";
 import BrandConcept from "@/components/BrandConcept";
 import SageAISection from "@/components/SageAISection";
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
   return (
@@ -50,12 +51,14 @@ const Index = () => {
             
             <div className="relative mx-auto max-w-3xl">
               <div className="absolute -inset-1 bg-gradient-to-r from-scal-green-cyan/30 to-scal-lime-green/30 rounded-3xl blur-lg opacity-50"></div>
-              <div className="relative bg-scal-dark-green/40 backdrop-blur-md rounded-3xl p-4 border border-scal-green-cyan/20 shadow-2xl animate-float">
-                <img 
-                  src="/lovable-uploads/ce8505eb-6f9e-46b8-aa41-de16758056e0.png"
-                  alt="Scal Logo" 
-                  className="w-full h-auto" 
-                />
+              <div className="relative bg-scal-dark-green/40 backdrop-blur-md rounded-3xl p-4 border border-scal-green-cyan/20 shadow-2xl animate-float overflow-hidden">
+                <AspectRatio ratio={16/9} className="rounded-2xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/36ca34ec-449f-4c59-ae5e-e04ecda18dd4.png"
+                    alt="Nova Logo Scal" 
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </AspectRatio>
               </div>
             </div>
           </div>
