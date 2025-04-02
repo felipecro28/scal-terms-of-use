@@ -1,5 +1,6 @@
 
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-scal-dark-jungle border-t border-scal-green-cyan/20 py-10 mt-20">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           <div>
             <img 
               src="/lovable-uploads/fa6f11ea-7a14-451c-a820-1d5225655203.png" 
@@ -53,22 +54,6 @@ const Footer = () => {
                 >
                   LGPD
                   <ExternalLink size={14} />
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-scal-white font-semibold mb-4">Acesso</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#acesso" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Acessar Sistema
-                </a>
-              </li>
-              <li>
-                <a href="#demo" className="text-scal-white/70 hover:text-scal-lime-green transition-colors">
-                  Solicitar Demonstração
                 </a>
               </li>
             </ul>
