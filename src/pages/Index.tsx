@@ -1,4 +1,3 @@
-
 import { ChevronDown, LineChart, Shield, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,7 +7,6 @@ import CTASection from "@/components/CTASection";
 import ServicesSection from "@/components/ServicesSection";
 import BrandConcept from "@/components/BrandConcept";
 import SageAISection from "@/components/SageAISection";
-import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
@@ -40,13 +38,15 @@ const Index = () => {
               <a href="https://app.sistemascal.com.br" className="button-primary text-base">
                 Acessar Sistema
               </a>
-              <Link 
-                to="/demo" 
+              <a 
+                href="https://api.whatsapp.com/send?phone=5585989371016&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Scal.%20" 
                 className="button-secondary text-base relative group overflow-hidden"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="absolute inset-0 bg-scal-green-cyan/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 rounded-full"></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Conhecer Nova Marca</span>
-              </Link>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Agendar uma demo</span>
+              </a>
             </div>
             
             <div className="relative mx-auto max-w-5xl">

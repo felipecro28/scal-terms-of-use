@@ -62,10 +62,12 @@ const SageAISection = () => {
             </ul>
             
             <a 
-              href="#demo" 
+              href="https://api.whatsapp.com/send?phone=5585989371016&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Scal.%20" 
               className="inline-flex mt-4 bg-gradient-to-r from-[#FB7F26] to-[#FB7F26]/80 text-white font-medium px-6 py-3 rounded-full transition-all hover:bg-opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-[#FB7F26]/50 focus:ring-2 focus:ring-[#FB7F26]/50 focus:outline-none duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Conheça a Sage em Ação
+              Agendar uma demo
             </a>
           </div>
         </div>

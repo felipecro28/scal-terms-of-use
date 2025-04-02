@@ -12,16 +12,17 @@ const CTASection = () => {
             Conheça nossa nova identidade e acompanhe de perto as próximas etapas da transformação do Scal.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#acesso" className="button-primary text-base">
+            <a href="https://app.sistemascal.com.br" className="button-primary text-base">
               Acessar Sistema Atual
             </a>
             <a 
-              href="#demo" 
+              href="https://api.whatsapp.com/send?phone=5585989371016&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Scal.%20" 
               className="button-secondary text-base relative overflow-hidden group" 
-              id="demo"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="absolute inset-0 bg-scal-green-cyan/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              <span className="relative z-10">Conhecer Nova Marca</span>
+              <span className="relative z-10">Agendar uma demo</span>
             </a>
           </div>
         </div>
