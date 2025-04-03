@@ -11,6 +11,7 @@ import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
 import LGPD from "./pages/LGPD";
 import Demo from "./pages/Demo";
 import DemoLanding from "./pages/DemoLanding";
+import Atendimento from "./pages/Atendimento";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/lgpd" element={<LGPD />} />
           <Route path="/demo" element={<DemoLanding />} />
           <Route path="/demo-landing" element={<DemoLanding />} />
+          <Route path="/atendimento" element={<Atendimento />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
