@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,13 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const DemoLanding = () => {
-  const scrollToForm = () => {
-    const formElement = document.getElementById('demo-form');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="min-h-screen gradient-bg font-funnel">
       {/* Header Space */}
@@ -94,12 +88,6 @@ const DemoLanding = () => {
                     </p>
                   </li>
                 </ul>
-                <Button 
-                  className="bg-scal-lime-green hover:bg-scal-lime-green/90 text-scal-dark-jungle font-medium mt-4 w-full"
-                  onClick={scrollToForm}
-                >
-                  Agendar demonstração gratuita
-                </Button>
               </div>
             </div>
           </div>
@@ -184,16 +172,6 @@ const DemoLanding = () => {
               </CardContent>
             </Card>
           </div>
-          
-          <div className="flex justify-center mt-10">
-            <Button 
-              className="bg-scal-lime-green hover:bg-scal-lime-green/90 text-scal-dark-jungle font-medium py-2 px-8 rounded-md transition-colors"
-              size="lg"
-              onClick={scrollToForm}
-            >
-              Ver como o Scal pode ajudar sua clínica
-            </Button>
-          </div>
         </div>
         
         {/* Comparison Section */}
@@ -244,16 +222,6 @@ const DemoLanding = () => {
                 </tr>
               </tbody>
             </table>
-          </div>
-          
-          <div className="flex justify-center mt-10">
-            <Button 
-              className="bg-scal-lime-green hover:bg-scal-lime-green/90 text-scal-dark-jungle font-medium py-2 px-8 rounded-md transition-colors"
-              size="lg"
-              onClick={scrollToForm}
-            >
-              Quero conhecer o Scal
-            </Button>
           </div>
         </div>
         
@@ -315,20 +283,10 @@ const DemoLanding = () => {
               </CardContent>
             </Card>
           </div>
-          
-          <div className="flex justify-center mt-10">
-            <Button 
-              className="bg-scal-lime-green hover:bg-scal-lime-green/90 text-scal-dark-jungle font-medium py-2 px-8 rounded-md transition-colors"
-              size="lg"
-              onClick={scrollToForm}
-            >
-              Quero resultados como estes
-            </Button>
-          </div>
         </div>
         
         {/* Form Section */}
-        <div className="max-w-4xl mx-auto mb-12" id="demo-form">
+        <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-scal-dark-green/50 backdrop-blur-md rounded-xl p-8 border border-scal-green-cyan/20 shadow-lg">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-scal-white">
               Agende sua <span className="text-scal-lime-green">demonstração gratuita</span>
@@ -354,7 +312,12 @@ const DemoLanding = () => {
           <Button 
             className="bg-scal-lime-green hover:bg-scal-lime-green/90 text-scal-dark-jungle font-medium py-2 px-6 rounded-md transition-colors"
             size="lg"
-            onClick={scrollToForm}
+            onClick={() => {
+              const formElement = document.getElementById('demo-form');
+              if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Agendar demonstração agora
           </Button>
