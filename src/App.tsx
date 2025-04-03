@@ -10,6 +10,7 @@ import TermosDeUso from "./pages/TermosDeUso";
 import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
 import LGPD from "./pages/LGPD";
 import Demo from "./pages/Demo";
+import DemoLanding from "./pages/DemoLanding";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
           <Route path="/lgpd" element={<LGPD />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/demo-landing" element={<DemoLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
