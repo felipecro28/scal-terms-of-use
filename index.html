@@ -33,13 +33,6 @@
       href="/lovable-uploads/0eab62bd-c97a-453f-b787-2cb2912135c1.png"
       type="image/png"
     />
-    <script>
-      const redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.pathname) {
-        history.replaceState(null, null, redirect);
-      }
-    </script>
   </head>
 
   <body>
@@ -47,5 +40,19 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if (
+        window.location.pathname !== "/" &&
+        !window.location.pathname.endsWith(".html")
+      ) {
+        fetch(window.location.pathname)
+          .then((res) => {
+            if (res.status === 404) window.location = "/";
+          })
+          .catch(() => {
+            window.location = "/";
+          });
+      }
+    </script>
   </body>
 </html>
