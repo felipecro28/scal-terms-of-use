@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+.yarn/*
+.yarnrc.yml
+.yarnrc.yaml
+.yarnrc
+.yarnrc.yml
+.yarnrc.yaml
+.yarnrc
