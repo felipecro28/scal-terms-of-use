@@ -20,9 +20,6 @@ jobs:
       - name: Copy index.html to 404.html
         run: cp dist/index.html dist/404.html
 
-      - name: Copy _redirects file
-        run: cp public/_redirects dist/_redirects
-
       - name: Debug build output
         run: |
           echo "Listing contents of the root directory..."
