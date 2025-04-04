@@ -33,13 +33,6 @@
       href="/lovable-uploads/0eab62bd-c97a-453f-b787-2cb2912135c1.png"
       type="image/png"
     />
-    <script>
-      const redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.pathname) {
-        history.replaceState(null, null, redirect);
-      }
-    </script>
   </head>
 
   <body>
